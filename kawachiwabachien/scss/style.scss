@@ -1,0 +1,816 @@
+@charset "UTF-8";
+@use "index";
+@use "variable";
+
+html{
+  margin: 0;
+}
+body{
+  margin: 0;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+}
+img{
+  max-width: 100%;
+  object-fit: cover;
+}
+li{
+  list-style: none;
+}
+
+// -----------------------------------------
+//                                    top view
+.hero__view-fadein{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  margin-bottom: 50px;
+
+  .hero__view__box{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 120vh;
+    z-index: 1;
+  }
+  .hero__view-01{
+    background-image:url(/images/mainvisual1.jpg);
+
+  }
+  .hero__view-02{
+    background-image: url(/images/mainvisual2.jpg);
+
+     }
+  .hero__view-03{
+    background-image: url(/images/mainvisual3jpg.jpg);
+
+  }
+  .slider{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero__view__text{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    z-index: 20;
+    color: #fff;
+    font-family: variable.$font;
+    font-size: 2rem;
+   h1:nth-of-type(2){
+    text-indent: 1em;
+   }
+  }
+  .hero__view__logo{
+    position: absolute;
+    z-index: 20;
+    width: 100px;
+    top: 40%;
+    left: 45%;
+  }
+  .hero__view__hunberger{
+    position:absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    top: 5%;
+    right: 5%;
+
+    span{
+      display: inline-block;
+      position: absolute;
+      z-index: 20;
+      top: 10%;
+      right: 5%;
+      height: 1px;
+      background: #fff;
+      width: 40px;
+    }
+
+    span:nth-of-type(1){
+      top: 15px;
+    }
+    span:nth-of-type(2){
+      top: 30px;
+    }
+    span:nth-of-type(3){
+      top: 45px;
+    }
+  }
+
+  .hero__view__scroll{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    height: 50px;
+    z-index: 20;
+
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 1px;
+      height: 50px;
+      background: #fff;
+      animation: scroll 3s ease-in-out infinite;
+    }
+    span{
+      position: absolute;
+      left: -15px;
+      top: -15px;
+      color: #fff;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+
+    }
+  }
+  // -----------------------------------------------------
+  //                                               content01
+  }
+.main__content-01{
+    position: relative;
+    margin-bottom: 750px;
+    width: 100%;
+  .main__content-01__title{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 80px;
+    letter-spacing: 0.3em;
+  }
+  .main__content-01__text{
+    color: variable.$fontcolor;
+    font-size: 1rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding: 0 0 0 50px;
+    position: absolute;
+    width: 50px;
+    height: 250px;
+    top: 0;
+    left: 150px;
+    letter-spacing: 0.5em;
+  }
+  .main__content-01__text-02{
+    color: variable.$fontcolor;
+    font-size: 1rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding: 0 0 0 50px;
+    position: absolute;
+    width: 50px;
+    height: 250px;
+    top: 0;
+    left: 120px;
+    text-indent: 2.5em;
+    letter-spacing: 0.5em;
+
+  }
+  .main__content-01__line{
+  position: absolute;
+  color: variable.$subcolor;
+   overflow: hidden;
+  width: 350px;
+  height: 350px;
+
+
+  .line01{
+    display: inline-block;
+      position: absolute;
+      z-index: 20;
+      top: 0;
+      left: 10%;
+      height: 550px;
+      background: variable.$subcolor;
+      width: 1px;
+      animation: scrollline 5s ease-in
+  }
+
+  .line02{
+    display: inline-block;
+      position: absolute;
+      z-index: 20;
+      top: 340px;
+      left: 1%;
+      height: 1px;
+      background: variable.$subcolor;
+      width: 300px;
+      // animation: scrollline2 5s ease-in
+  }
+ }
+ .main__content-01__img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .main__content-01__img-01{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 640px;
+    height: 380px;
+    z-index: 10;
+  }
+  .main__content-01__img-02{
+    position: absolute;
+    top: 300px;
+    right: 500px;
+    z-index: 20;
+    width: 370px;
+
+  }
+
+ }
+}
+// -------------------------------------------------------
+//                                              content02
+.main__content-02{
+  position: relative;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 600px;
+
+  .main__content-02__title{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    right: 80px;
+    top: 35%;
+    letter-spacing: 0.3em;
+  }
+  .main__content-02__line{
+    position: absolute;
+    color: variable.$subcolor;
+     overflow: hidden;
+    width: 350px;
+    height: 350px;
+    right: 3%;
+    top: 30%;
+
+    .line01{
+      display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        right: 10%;
+        height: 550px;
+        background: variable.$subcolor;
+        width: 1px;
+        animation: scrollline 5s ease-in
+    }
+
+    .line02{
+      display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 340px;
+        right: 1%;
+        height: 1px;
+        background: variable.$subcolor;
+        width: 300px;
+        // animation: scrollline2 5s ease-in
+    }
+  }
+  .main__content-02__box{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    right: 15%;
+    top:30%;
+
+  .main__content-02__text{
+    color: variable.$fontcolor;
+    font-size: 1rem;
+
+  }
+  }
+  .main__content-02__point{
+    position: absolute;
+    width: 100px;
+    top:-35%;
+    right: 100%;
+  }
+  .main__content-02__btn{
+    position: absolute;
+    bottom:-10%;
+    right: 33%;
+    width: 200px;
+    height: 46px;
+    background-color: #aa9900;
+    color: #fff;
+    font-family: variable.$font;
+    font-size: 14px;
+
+  }
+  .main__content-02__container{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .main__content-02__img{
+      position: relative;
+      width: 450px;
+      height: 450px;
+      z-index: 10;
+    }
+    .main__content-02__bg{
+      position: absolute;
+      top:20px;
+      left: 20px;
+      z-index: 9;
+      width: 450px;
+      height: 300px;
+      background-color: variable.$beju;
+    }
+  }
+  .main__content-02__point-02{
+    position: absolute;
+    top: 450px;
+    width: 150px;
+  }
+}
+// ------------------------------------------------
+//                                          content03
+.main__content-03{
+    position: relative;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 600px;
+  .main__content-03__title{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 80px;
+    letter-spacing: 0.3em;
+  }
+  .main__content-03__title-02{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    letter-spacing: 0.3em;
+  }
+  .main__content-03__line{
+    position: absolute;
+  color: variable.$subcolor;
+   overflow: hidden;
+  width: 350px;
+  height: 350px;
+
+
+  .line01{
+    display: inline-block;
+      position: absolute;
+      z-index: 20;
+      top: 0;
+      left: 10%;
+      height: 550px;
+      background: variable.$subcolor;
+      width: 1px;
+      animation: scrollline 5s ease-in
+  }
+
+  .line02{
+    display: inline-block;
+      position: absolute;
+      z-index: 20;
+      top: 340px;
+      left: 1%;
+      height: 1px;
+      background: variable.$subcolor;
+      width: 300px;
+      // animation: scrollline2 5s ease-in
+  }
+  }
+  .main__content-03_box{
+    position: absolute;
+    width: 340px;
+    height: 300px;
+    top: 5%;
+    left: 12%;
+    .main__content-03__text{
+      color: variable.$fontcolor;
+      font-size: 1rem;
+      padding-bottom: 15px;
+    }
+    .main__content-03__li{
+    color: variable.$fontcolor;
+      font-size: 1rem;
+      padding:0 0 10px 15px;
+  }
+ }
+ .main__content-03__btn{
+  position: absolute;
+    top:47%;
+    left: 12%;
+    width: 200px;
+    height: 46px;
+    background-color: #aa9900;
+    color: #fff;
+    font-family: variable.$font;
+    font-size: 14px;
+ }
+ .main__content-03__container{
+  position: absolute;
+    top: 0;
+    right: 0;
+    .main__content-03__img{
+      position: relative;
+      width: 550px;
+      height: 450px;
+      z-index: 10;
+    }
+    .main__content-03__bg{
+      position: absolute;
+      top:20px;
+      left: 20px;
+      z-index: 9;
+      width: 550px;
+      height: 380px;
+      background-color: variable.$beju;
+    }
+ }
+}
+// -----------------------------------------
+//                                         content4
+
+.main__content-04__scroll{
+  background-color: variable.$lightglay;
+  margin-bottom: 100px;
+  img{
+    width: 100%;
+    height: 50vh;
+  }
+  .slick-slide{
+    margin: 0 30px;
+  }
+}
+.main__content-05{
+  position: relative;
+    margin-bottom: 200px;
+    width: 100%;
+    height: 750px;
+
+    .main__content-05__box{
+    position: relative;
+    top: 0;
+    left: 0;
+    .main__content-05__title{
+    color: variable.$maincolor;
+    font-size: 2.5rem;
+    font-family: variable.$font;
+    font-weight: 600;
+    width: 380px;
+    height: 150px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    letter-spacing: 0.3em;
+    }
+    .main__content-05__text{
+      position: absolute;
+      top: 100%;
+      left: 9%;
+      color: variable.$fontcolor;
+      font-size: 0.9rem;
+      padding-bottom: 15px;
+      padding-top: 150px;
+      width: 300px;
+      height: 200px;
+
+    }
+  }
+    .main__content-05__container{
+      position: relative;
+
+
+
+      .main__content-05__img01{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 600px;
+      max-height: 100%;
+      height: 500px;
+      z-index: 10;
+      }
+      .main__content-05__img02{
+      position: absolute;
+      top: 250px;
+      right: 400px;
+      width: 400px;
+      height: 400px;
+      z-index: 9;
+      }
+      .main__content-05__logo{
+        position: absolute;
+      top: 500px;
+      right: 800px;
+      width: 200px;
+      height: 200px;
+      z-index: 8;
+      }
+    }
+    .main__content-05__title-02{
+    color: variable.$maincolor;
+    font-size: 2.5rem;
+    font-family: variable.$font;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 70%;
+    padding: 0 30px;
+    letter-spacing: 0.3em;
+    }
+}
+
+// --------------------------------------------------------
+//                                           content06
+
+.main__content-06{
+  padding: 0 15%;
+  position: relative;
+  .main__content-06__title{
+    color: variable.$maincolor;
+    font-size: 3rem;
+    font-family: variable.$font;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 300px;
+      height: 1px;
+      background-color: variable.$maincolor;
+      position: absolute;
+      top: 40px;
+      left: 30px;
+    }
+    &::after{
+      content: "";
+      display: inline-block;
+      width: 300px;
+      height: 1px;
+      background-color: variable.$maincolor;
+      position: absolute;
+      top: 40px;
+      right: 30px;
+    }
+  }
+    .main__content-06__outer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin: 30px;
+      .main__content-06__inner{
+        width: 30%;
+
+        img{
+
+
+        }
+        p{
+          color: variable.$fontcolor;
+          font-size: 0.9rem;
+          text-align: center;
+        }
+      }
+
+      }
+    .main__content-06__btn__outer{
+        text-align: right;
+        padding-bottom: 30px;
+      .main__content-06__btn{
+        width: 200px;
+        height: 60px;
+        background-color: #aa9900;
+        color: #fff;
+        font-family: variable.$font;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    .main__content-06__li{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      border-top: solid 0.3px #aa9900;
+
+      dt{
+        width: 30%;
+        border-bottom: solid 0.3px #aa9900;
+        padding: 35px 0 ;
+        font-family: variable.$font;
+        font-size: 14px;
+        text-align: center;
+      }
+      dd{
+        width: 70%;
+        border-bottom: solid 0.5px #aa9900;
+        padding: 35px 0 ;
+        font-family: variable.$font;
+        font-size: 14px;
+        text-align: center;
+      }
+
+    }
+}
+// ----------------------------------------
+//                                        content07
+.main__content-07{
+  padding: 0 15%;
+  position: relative;
+  margin-bottom: 30px;
+  .main__content-07__title{
+    color: variable.$maincolor;
+    font-size: 3rem;
+    font-family: variable.$font;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 250px;
+      height: 1px;
+      background-color: variable.$maincolor;
+      position: absolute;
+      top: 40px;
+      left: 30px;
+    }
+    &::after{
+      content: "";
+      display: inline-block;
+      width: 250px;
+      height: 1px;
+      background-color: variable.$maincolor;
+      position: absolute;
+      top: 40px;
+      right: 30px;
+    }
+  }
+  .main__content-07__outer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    justify-content: space-between;
+
+    li{
+      width: 25%;
+      padding: 15px;
+    }
+  }
+  .main__content-07__bg{
+    position: absolute;
+    top:100px;
+    right: 0;
+    width: 80%;
+    height: 400px;
+    background-color: variable.$lightglay;
+    z-index: -10;
+  }
+  .main__content-07__box{
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    img{
+      width: 30px;
+
+    }
+  }
+}
+// ------------------------------------------------
+//                                        footer
+
+.footer__container{
+  position: relative;
+  width: 100vw;
+  height: 100%;
+
+  .footer__logo{
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    z-index: 10;
+    width: 100px;
+  }
+  .footer__xros{
+    position: absolute;
+
+    top: 5%;
+    right: 5%;
+    z-index: 20;
+    width: 50px;
+    height: 50px;
+
+    span{
+      content:"";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 2px;
+      color:#fff;
+    }
+  }
+  .footer__li{
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+
+    li{
+      color: #fff;
+      font-family: variable.$font;
+      padding: 10px;
+
+    &::before  {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 1px;
+      background-color: white;
+
+
+
+      li::before:nth-child(1){
+        top: 5px;
+        left: 100px;
+
+      }
+    }
+    }
+
+  }
+  .footer__contact{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    top: 15%;
+    right: 10%;
+    div{
+      padding: 20px 0;
+
+      p{
+        color: #fff;
+        font-family: variable.$font;
+      };
+
+    }
+  }
+}

@@ -1,0 +1,657 @@
+@charset "UTF-8";
+@use "index";
+@use "variable";
+
+
+
+.page8__header{
+  .page8__header__box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    @include variable.sp {
+
+      height: 80vh;
+    }
+
+    .page8__header__box__img{
+      position: absolute;
+      background-image: url(/images/pbmainvisual.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+    }
+    .page8__header__box__text-01{
+      position: absolute;
+      top: 27%;
+      left: 55%;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      @include variable.sp{
+        font-size: 3rem;
+        left: 60%;
+      }
+    }
+    .page8__header__box__text-02{
+      position: absolute;
+      top: 23%;
+      left: 48%;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      text-indent: 2em;
+      letter-spacing: 0.3em;
+      @include variable.sp{
+        font-size: 3rem;
+        left: 45%;
+      }
+    }
+    .page8__header__box__text-03{
+      position: absolute;
+      top: 28%;
+      left: 40%;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      @include variable.sp{
+        font-size: 3rem;
+        left: 30%;
+      }
+    }
+    .page8__header__box__logo{
+      position: absolute;
+      left: 2%;
+      top: 2%;
+      z-index: 2;
+      width: 100px;
+      @include variable.sp{
+        width: 75px;
+      }
+    }
+  }
+}
+
+.page8__content-01{
+  position: relative;
+  height: 3000px;
+  margin-bottom: 1300px;
+  @include variable.sp{
+    margin-bottom: 100px;
+
+  }
+  .page8__content-01__title-01{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 120px;
+    letter-spacing: 0.3em;
+    @include variable.sp{
+      left: 80px;
+      top: 50px;
+    }
+  }
+  .page8__content-01__title-02{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 80px;
+    letter-spacing: 0.3em;
+    text-indent: 4em;
+    @include variable.sp{
+      left: 40px;
+      top: 50px;
+    }
+  }
+
+  .page8__content-01__line{
+    position: absolute;
+    color: variable.$subcolor;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+
+
+    .page8__content-01__line01{
+        display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 10%;
+        height: 550px;
+        background: variable.$subcolor;
+        width: 1px;
+        // animation: scrollline 5s ease-in
+    }
+
+    .page8__content-01__line02{
+      display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 340px;
+        left: 1%;
+        height: 1px;
+        background: variable.$subcolor;
+        width: 300px;
+        // animation: scrollline2 5s ease-in
+
+
+    }
+   }
+   .page8__content-01__container1{
+    .page8__content-01__container1__imgbox{
+
+
+      .page8__content-01__container1__imgbox01{
+        position: absolute;
+        top: 2%;
+        right:10%;
+        z-index: 9;
+        width: 50%;
+        // animation: slideimg linear both;
+        // animation-timeline: view();
+        // animation-range: contain 0% contain 50%;
+      @include variable.sp{
+        left: 35%;
+        top: 12%;
+        width: 60%;
+      }
+      }
+      .page8__content-01__container1__imgbox02{
+        position: absolute;
+        top: 11%;
+        right: 50%;
+        z-index: 10;
+        width: 30%;
+        // animation: slideimg linear both;
+        // animation-timeline: view();
+        // animation-range: contain 0% contain 50%;
+      @include variable.sp{
+        left: 0;
+        top: 15%;
+        width: 60%;
+      }
+      }
+    }
+    .page8__content-01__container1__text{
+      width: 60%;
+      position: absolute;
+      z-index: 10;
+      top: 22%;
+      left: 10%;
+      @include variable.sp{
+        width: 80%;
+      }
+        .page8__content-01__container1__text01{
+          color: variable.$fontcolor;
+          font-size: 1.2rem;
+          font-weight: 600;
+          @include variable.sp{
+            font-size: 1rem;
+          }
+        }
+    }
+   }
+
+   .page8__content-01__container2{
+    position: relative;
+    top: 800px;
+    height: 800px;
+
+    .page8__content-01__container2__box01{
+      .page8__content-01__container2__box01-img{
+        width: 20%;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        @include variable.sp{
+          width: 80%;
+        }
+      }
+      .page8__content-01__container2__box01-bg{
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        z-index: 1;
+        top:15% ;
+        left: 25%;
+        background-color: #d9d9d9;
+        border-radius: 30px;
+        color: variable.$maincolor;
+        font-size: 1.5rem;
+        font-weight: 600;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        @include variable.sp{
+          height: 10%;
+          width: 25%;
+          left: 10%;
+          top: 18%;
+          font-size: 1rem;
+        }
+      }
+      .page8__content-01__container2__box01-arrow{
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        z-index: 1;
+        background: #000;
+        display: inline-block;
+        vertical-align: middle;
+        color: #333;
+        line-height: 1;
+        position: relative;
+        width: 7em;
+        height: 0.5em;
+        background: currentColor;
+        @include variable.sp{
+          left: 38%;
+          height: 0.3em;
+          top: 190px;
+
+        }
+
+        &::before{
+          content: '';
+          width: 3em;
+          height: 3em;
+          border: 0.5em solid currentColor;
+          border-left: 0;
+          border-bottom: 0;
+          transform: rotate(45deg);
+          transform-origin: top right;
+          position: absolute;
+          top: 50%;
+          right: -0.05em;
+          box-sizing: border-box;
+          @include variable.sp{
+            border: 0.3em solid currentColor;
+            border-left: 0;
+          border-bottom: 0;
+          }
+        }
+
+      }
+      .page8__content-01__container2__box01-bg2{
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        z-index: 1;
+        top:15% ;
+        left: 65%;
+        background-color: #3e3801;
+        border-radius: 30px;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        @include variable.sp{
+          height: 10%;
+          width: 30%;
+          left: 65%;
+          top: 18%;
+          font-size: 1rem;
+        }
+      }
+      .page8__content-01__container2__box01-text{
+        color: variable.$fontcolor;
+        font-size: 1.5rem;
+        font-weight: 600;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: absolute;
+        left: 52%;
+        top: 150px;
+        @include variable.sp{
+          writing-mode: horizontal-tb;
+          font-size: 1rem;
+          left: 45%;
+          top: 170px;
+        }
+      }
+    }
+    .page8__content-01__container2__box02{
+      .page8__content-01__container2__box02-img{
+        width: 20%;
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        @include variable.sp{
+          width: 80%;
+        }
+      }
+      .page8__content-01__container2__box02-bg{
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        z-index: 1;
+        top:60% ;
+        left: 25%;
+        background-color: #d9d9d9;
+        border-radius: 30px;
+        color: variable.$maincolor;
+        font-size: 1.5rem;
+        font-weight: 600;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        @include variable.sp{
+          height: 10%;
+          width: 25%;
+          left: 10%;
+          top: 65%;
+          font-size: 1rem;
+        }
+      }
+      .page8__content-01__container2__box02-arrow{
+        position: absolute;
+        top: 540px;
+        left: 50%;
+        z-index: 1;
+        background: #000;
+        display: inline-block;
+        vertical-align: middle;
+        color: #333;
+        line-height: 1;
+        position: relative;
+        width: 7em;
+        height: 0.5em;
+        background: currentColor;
+        @include variable.sp{
+          left: 38%;
+          height: 0.3em;
+          top: 530px;
+
+        }
+
+
+        &::before{
+          content: '';
+          width: 3em;
+          height: 3em;
+          border: 0.5em solid currentColor;
+          border-left: 0;
+          border-bottom: 0;
+          transform: rotate(45deg);
+          transform-origin: top right;
+          position: absolute;
+          top: 50%;
+          right: -0.05em;
+          box-sizing: border-box;
+          @include variable.sp{
+            border: 0.3em solid currentColor;
+            border-left: 0;
+          border-bottom: 0;
+          }
+        }
+
+      }
+      .page8__content-01__container2__box02-bg2{
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        z-index: 1;
+        top:60% ;
+        left: 65%;
+        background-color: #3e3801;
+        border-radius: 30px;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        @include variable.sp{
+          height: 10%;
+          width: 30%;
+          left: 65%;
+          top: 65%;
+          font-size: 1rem;
+        }
+      }
+      .page8__content-01__container2__box02-text{
+        color: variable.$fontcolor;
+        font-size: 1.5rem;
+        font-weight: 600;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: absolute;
+        left: 52%;
+        top: 500px;
+        @include variable.sp{
+          writing-mode: horizontal-tb;
+          font-size: 1rem;
+          left: 45%;
+          top: 530px;
+        }
+      }
+    }
+    .page8__content-01__container2__text{
+      width: 45%;
+      position: absolute;
+      left: 10%;
+      top: 85%;
+      color: variable.$fontcolor;
+      font-size: 1.2rem;
+      font-weight: 600;
+      @include variable.sp{
+        width: 80%;
+        font-size: 1rem;
+      }
+    }
+   }
+   .page8__content-01__container3{
+    &-box{
+      position: relative;
+      top: 900px;
+      left: 10%;
+      width: 40%;
+      height: 1200px;
+      background-color: variable.$lightglay;
+      @include variable.sp{
+
+        left:3% ;
+        width: 45%;
+        height: 500px;
+      }
+      &img{
+        position: absolute;
+        left: 10%;
+        top: 100px;
+        @include variable.sp{
+          left: 5%;
+          top: 50px;
+        }
+      }
+      &bg{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -70px;
+        right: -70px;
+        z-index: -1;
+        background-color:#c18259 ;
+        @include variable.sp{
+          width: 50px;
+          height: 50px;
+          top: -25px;
+          left: -25px;
+        }
+
+      }
+    }
+    &-box2{
+      position: relative;
+      top: -300px;
+      left: 60%;
+      width: 40%;
+      height: 1200px;
+      background-color: #f1e6d6;
+      @include variable.sp{
+        top: 400px;
+        left:50% ;
+        width: 45%;
+        height: 500px;
+      }
+      &img{
+        position: absolute;
+        left: 10%;
+        top: 100px;
+        @include variable.sp{
+          left: 5%;
+          top: 50px;
+        }
+      }
+      &bg{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: -70px;
+        left: -70px;
+        z-index: -1;
+        background-color:#c18259 ;
+        @include variable.sp{
+          width: 50px;
+          height: 50px;
+          bottom:  -25px;
+          left: 80%;
+        }
+      }
+    }
+   }
+   .page8__content-01__container4{
+     position: relative;
+     height: 1000px;
+    &-text{
+      width: 35%;
+      position: absolute;
+      left: 50%;
+      top: -10%;
+      color: variable.$fontcolor;
+      font-size: 1.2rem;
+      font-weight: 600;
+      @include variable.sp{
+        top: 45%;
+        width: 80%;
+        left: 10%;
+        font-size: 1rem;
+      }
+
+    }
+    &-imgbox{
+      &1{
+        position: absolute;
+        width: 40%;
+        left: 5%;
+        z-index: 10;
+        // animation: slideimg linear both;
+        // animation-timeline: view();
+        // animation-range: contain 0% contain 50%;
+        @include variable.sp{
+          top: 60%;
+          width: 80%;
+          left: 10%;
+        }
+      }
+      &2{
+        width: 10%;
+        height: 14%;
+        background-color: #d9d9d9;
+        position: absolute;
+        top: 15%;
+        left: 0;
+        z-index: -1;
+        @include variable.sp{
+          top: 65%;
+          width: 80%;
+          left: 15%;
+
+        }
+
+      }
+      &3{
+        width: 70%;
+        clip-path: inset(15% 0 10% 0 );
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        z-index: 1;
+        // animation: slideimg linear both;
+        // animation-timeline: view();
+        // animation-range: contain 0% contain 50%;
+        @include variable.sp{
+          top: 80%;
+          width: 80%;
+          left: 10%;
+
+        }
+      }
+      &4{
+        width: 70%;
+        height: 24%;
+        background-color: #f1e6d6;
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        z-index: -1;
+        @include variable.sp{
+          top: 85%;
+          width: 80%;
+          left: 5%;
+          height: 14%;
+
+        }
+      }
+    }
+    &-text2{
+      width: 65%;
+      position: absolute;
+      top: 75%;
+      left: 15%;
+      color: variable.$maincolor;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      @include variable.sp{
+        top: 105%;
+        width: 80%;
+        left: 5%;
+        font-size: 1.3rem;
+
+
+      }
+    }
+   }
+  }

@@ -1,0 +1,861 @@
+@charset "UTF-8";
+@use "index";
+@use "variable";
+
+// ---------------------------------------------------
+//                                    header
+
+
+
+.page1__header{
+
+  .page1__header__box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    @include variable.sp {
+
+      height: 80vh;
+    }
+
+    .page1__header__box__img{
+      position: absolute;
+      background-image: url(/images/P1mainvisual.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+    }
+    .page1__header__box__text-01{
+      position: absolute;
+      top: 28%;
+      left: 50%;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      @include variable.sp{
+        font-size: 3rem;
+        left: 50%;
+      }
+    }
+    .page1__header__box__text-02{
+      position: absolute;
+      top: 28%;
+      left: 43%;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      text-indent: 3em;
+      letter-spacing: 0.3em;
+
+      @include variable.sp{
+        font-size: 3rem;
+        left: 35%;
+      }
+    }
+    .page1__header__box__logo{
+      position: absolute;
+      left: 2%;
+      top: 2%;
+      z-index: 2;
+      width: 100px;
+      @include variable.sp{
+        width: 75px;
+      }
+    }
+  }
+}
+
+.page1__navi{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @include variable.sp{
+    height: 100px;
+    justify-content: space-between;
+  }
+
+  .page1__navi__box{
+    position: absolute;
+    z-index: 10;
+    padding: 20px;
+    display: flex;
+    top: 30%;
+    left: 35%;
+    @include variable.sp{
+      left: 1%;
+      top: 25%;
+    }
+
+    .page1__navi__box__text-01{
+      font-size: 0.9rem;
+    }
+    .page1__navi__box__tri-01{
+      position: absolute;
+      top:25px;
+      left: 140px;
+      width: 0;
+      height: 0;
+      border-top: solid 15px variable.$fontcolor;
+      border-right: solid 15px transparent;
+      border-bottom: solid 15px transparent;
+      border-left: solid 15px transparent;
+    }
+  }
+  .page1__navi__box-02{
+    position: absolute;
+    z-index: 10;
+    padding: 20px;
+    display: flex;
+    top: 30%;
+    left: 55%;
+    @include variable.sp{
+
+      top: 25%;
+    }
+
+    .page1__navi__box-02__text-02{
+      font-size: 0.9rem;
+
+    }
+    .page1__navi__box-02__tri-02{
+      position: absolute;
+      top: 25px;
+      left: 130px;
+      width: 0;
+      height: 0;
+      border-top: solid 15px variable.$fontcolor;
+      border-right: solid 15px transparent;
+      border-bottom: solid 15px transparent;
+      border-left: solid 15px transparent;
+    }
+  }
+  .page1__navi__box__bg{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: variable.$beju;
+
+    @include variable.sp{
+      height: 100px;
+    }
+
+  }
+  .page1__navi__box__line{
+    position: absolute;
+    top: 150px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #101003;
+    @include variable.sp{
+      top: 100px;
+    }
+  }
+}
+
+// -------------------------------------
+//                          content1
+
+.page1__content-01{
+  position: relative;
+
+  .page1__content-01__title-01{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 120px;
+    letter-spacing: 0.3em;
+    @include variable.sp{
+      left: 80px;
+    }
+  }
+  .page1__content-01__title-02{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 80px;
+    letter-spacing: 0.3em;
+    text-indent: 4em;
+    @include variable.sp{
+      left: 40px;
+    }
+  }
+
+  .page1__content-01__line{
+    position: absolute;
+    color: variable.$subcolor;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+
+
+    .page1__content-01__line01{
+        display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 10%;
+        height: 550px;
+        background: variable.$subcolor;
+        width: 1px;
+        // animation: scrollline 5s ease-in
+    }
+
+    .page1__content-01__line02{
+      display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 340px;
+        left: 1%;
+        height: 1px;
+        background: variable.$subcolor;
+        width: 300px;
+        // animation: scrollline2 5s ease-in
+
+
+    }
+   }
+  // -----------------------------------------------
+
+  .page1__content-01__container1{
+
+    .page1__content-01__container1__text{
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      width: 550px;
+      height: 300px;
+      z-index: 20;
+      @include variable.sp{
+        width: 90%;
+      }
+
+      .page1__content-01__container1__text01{
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+        letter-spacing: 0.1rem;
+        @include variable.sp{
+          font-size: 1rem;
+        }
+      }
+      .page1__content-01__container1__text02{
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+        @include variable.sp{
+          font-size: 1rem;
+        }
+      }
+    }
+
+
+  .page1__content-01__container1__imgbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end ;
+    width: 100%;
+    height: 700px;
+
+
+    .page1__content-01__container1__imgbox01{
+      position: absolute;
+      width: 20%;
+      top: 10%;
+      right: 5%;
+      // animation: slideimg linear forwards;
+      // animation-timeline: view();
+      // animation-range: contain 0% contain 50%;
+
+      @include variable.sp{
+        width: 60%;
+        top: 55%;
+        left: 5%;
+      }
+
+    }
+    .page1__content-01__container1__imgbox02{
+      position: absolute;
+      top: 30%;
+      right: 18%;
+      width: 40%;
+      z-index: 10;
+      // animation: slideimg linear both;
+      // animation-timeline: view();
+      // animation-range: contain 0% contain 50%;
+      @include variable.sp{
+        left: 40%;
+        top: 15%;
+        width: 55%;
+      }
+    }
+    .page1__content-01__container1__imgbox03{
+      position: absolute;
+      top: 60%;
+      left: 25%;
+      width: 15%;
+      @include variable.sp{
+        top: 130%;
+        width: 40%;
+        left: 50%;
+      }
+    }
+  }
+}
+  .page1__content-01__container1__bg{
+    position: absolute;
+    right: 0;
+    width: 350px;
+    opacity: 0.1;
+
+    @include variable.sp{
+      display: none;
+    }
+  }
+// ----------------------------------------------
+  .page1__content-01__container2{
+
+    .page1__content-01__container2__text{
+      position: absolute;
+      top: 40%;
+      right: 10%;
+      width: 400px;
+      height: 300px;
+      z-index: 20;
+      text-align: center;
+      @include variable.sp{
+        width: 90%;
+        left: 7%;
+        top: 35%;
+      }
+
+      .page1__content-01__container2__text01{
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+        padding-bottom: 30px;
+        @include variable.sp{
+          font-size: 1rem;
+        }
+      }
+      .page1__content-01__container2__text02{
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+        @include variable.sp{
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .page1__content-01__container2__imgbox{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 650px;
+      margin-bottom: 220px;
+
+      .page1__content-01__container2__imgbox01{
+        position: absolute;
+        width: 20%;
+        right: 30%;
+        top: 5%;
+        // animation: slideimg linear forwards;
+        // animation-timeline: view();
+        // animation-range: contain 0% contain 50%;
+        @include variable.sp{
+        width: 90%;
+        top: 85%;
+        right: 0;
+        clip-path: inset(10% 0 20% 0);
+      }
+      }
+      .page1__content-01__container2__imgbox02{
+        position: absolute;
+        width: 45%;
+        top: 30%;
+        left: 10%;
+        z-index: 10;
+        // animation: slideimg linear both;
+      // animation-timeline: view();
+      // animation-range: contain 0% contain 50%;
+      @include variable.sp{
+        width: 37%;
+        top: 20%;
+      }
+      }
+    }
+  }
+// -------------------------------------------------
+
+  .page1__content-01__container3{
+     margin-bottom: 600px;
+
+    .page1__content-01__container3__text{
+      width: 80%;
+      height: 150px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-left: 15%;
+      @include variable.sp{
+        width: 90%;
+      }
+
+      p{
+        font-size: 1.5rem;
+        color: variable.$fontcolor;
+        padding-bottom: 10px;
+        letter-spacing: 0.2rem;
+        @include variable.sp{
+          font-size: 1rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+    .page1__content-01__container3_img{
+      position: absolute;
+      top: 43%;
+      width: 100%;
+      height: 50%;
+      padding: 0 8%;
+      // animation: slideimg linear both;
+      // animation-timeline: view();
+      // animation-range: contain 0% contain 50%;
+
+      .clippath{
+        clip-path: inset(55% 0 10% 0);
+      }
+      @include variable.sp{
+        top: 53%;
+        padding: 0;
+        animation-range: contain -50% contain 0%;
+      }
+    }
+    .page1__content-01__container3_bg{
+      position: absolute;
+      width: 70%;
+      left: -40%;
+      top: 50%;
+      z-index: -10;
+    }
+  }
+// ---------------------------------------------------
+  .page1__content-01__container4{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin-bottom: 100px;
+
+    @include variable.sp{
+      margin-bottom: -300px;
+    }
+
+    .page1__content-01__container4__box1{
+      position: absolute;
+      background-color: variable.$lightglay;
+      width: 200px;
+      height: 60px;
+      top: 0;
+      left: 10%;
+
+      @include variable.sp{
+        top: -50%;
+        left: 12%;
+
+      }
+      .page1__content-01__container4__box1__text{
+        color: variable.$fontcolor;
+        width: 160px;
+        height: 50px;
+        padding: 10px 0 10px 20px;
+
+      }
+
+      span{
+        position: absolute;
+      top: 100px;
+      left: 12%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 80px solid #c6b484;
+      border-right: 0;
+
+      @include variable.sp{
+        top: 120%;
+        left: 45%;
+        border-style: solid;
+        border-top: 10px solid #c6b484;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+
+      }
+      }
+    }
+    .page1__content-01__container4__box2{
+      position: absolute;
+      background-color: variable.$lightglay;
+      width: 200px;
+      height: 60px;
+      top: 12%;
+      left: 28%;
+
+      @include variable.sp{
+        top: -38%;
+        left: 18%;
+      }
+
+      .page1__content-01__container4__box2__text{
+        color: variable.$fontcolor;
+        width: 160px;
+        height: 50px;
+        padding: 10px 0 10px 20px;
+
+      }
+
+      span{
+        position: absolute;
+      top: 100px;
+      left: 12%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 80px solid #c6b484;
+      border-right: 0;
+      @include variable.sp{
+        top: 120%;
+        left: 45%;
+        border-style: solid;
+        border-top: 10px solid #c6b484;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+
+      }
+      }
+    }
+    .page1__content-01__container4__box3{
+      position: absolute;
+      background-color: variable.$lightglay;
+      width: 200px;
+      height: 60px;
+      top: 24%;
+      left: 46%;
+
+      @include variable.sp{
+        top: -25%;
+        left: 24%;
+      }
+
+      .page1__content-01__container4__box3__text{
+        color: variable.$fontcolor;
+        width: 160px;
+        height: 50px;
+        padding: 10px 0 10px 20px;
+
+      }
+
+      span{
+        position: absolute;
+      top: 100px;
+      left: 12%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 80px solid #c6b484;
+      border-right: 0;
+      @include variable.sp{
+        top: 120%;
+        left: 45%;
+        border-style: solid;
+        border-top: 10px solid #c6b484;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+
+      }
+      }
+    }
+    .page1__content-01__container4__box4{
+      position: absolute;
+      background-color: variable.$lightglay;
+      width: 200px;
+      height: 60px;
+      top: 36%;
+      left: 64%;
+
+      @include variable.sp{
+        left: 30%;
+        top: -14%;
+      }
+
+      .page1__content-01__container4__box4__text{
+        color: variable.$fontcolor;
+        width: 170px;
+        height: 50px;
+        padding: 20px 0 10px 20px;
+
+      }
+
+      span{
+        position: absolute;
+      top: 100px;
+      left: 12%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 80px solid #c6b484;
+      border-right: 0;
+      @include variable.sp{
+        top: 120%;
+        left: 45%;
+        border-style: solid;
+        border-top: 10px solid #c6b484;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+
+      }
+      }
+    }
+    .page1__content-01__container4__box5{
+      position: absolute;
+      background-color: variable.$lightglay;
+      width: 200px;
+      height: 60px;
+      top: 48%;
+      left: 81%;
+
+      @include variable.sp{
+        left: 36%;
+        top: -2%;
+      }
+
+      .page1__content-01__container4__box5__text{
+        color: variable.$fontcolor;
+        width: 160px;
+        height: 50px;
+        padding: 10px 0 10px 20px;
+
+      }
+
+
+    }
+
+    .page1__content-01__container4__logo{
+      position: absolute;
+      width: 450px;
+      top: 50%;
+      left: 10%;
+
+      @include variable.sp{
+        width: 100%;
+        top: 15%;
+        left: 0;
+      }
+    }
+  }
+}
+// -------------------------------------------------
+//                                             content2
+
+  .page1__section__line{
+    width: 100%;
+    height: 100px;
+    background-color: #c18259;
+    margin-bottom: 20px;
+    @include variable.sp{
+      height: 50px;
+    }
+
+  }
+
+.page1__content-02{
+  position: relative;
+  @include variable.sp{
+    margin-bottom: 300px;
+  }
+  .page1__content-02__title-01{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 120px;
+    letter-spacing: 0.3em;
+    @include variable.sp{
+      left: 80px;
+    }
+  }
+  .page1__content-02__title-02{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 80px;
+    letter-spacing: 0.3em;
+    text-indent: 4em;
+    @include variable.sp{
+      left: 40px;
+    }
+  }
+
+  .page1__content-02__line{
+    position: absolute;
+    color: variable.$subcolor;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+
+    .page1__content-02__line01{
+      display: inline-block;
+      position: absolute;
+      z-index: 20;
+      top: 0;
+      left: 10%;
+      height: 550px;
+      background: variable.$subcolor;
+      width: 1px;
+      // animation: scrollline 5s ease-in
+    }
+    .page1__content-02__line02{
+      display: inline-block;
+      position: absolute;
+      z-index: 20;
+      top: 340px;
+      left: 1%;
+      height: 1px;
+      background: variable.$subcolor;
+      width: 300px;
+      // animation: scrollline2 5s ease-in
+    }
+  }
+    .page1__content-02__container{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 500px;
+
+      .page1__content-02__container__img01{
+      position: absolute;
+      width: 40%;
+      height: 300px;
+      top: 10%;
+      left: 30%;
+      // animation: slideimg linear both;
+      // animation-timeline: view();
+      // animation-range: contain 0% contain 50%;
+
+      .clippath__2{
+        clip-path: inset(16% 0 11% 0);
+        @include variable.sp{
+          clip-path: inset(0 0% 0 10%);
+        }
+      }
+      @include variable.sp{
+        left: 40%;
+        width: 60%;
+
+      }
+    }
+    .page1__content-02__container__img02{
+      position: absolute;
+      width: 40%;
+      top: 45%;
+      left: 55%;
+
+      // animation: slideimg linear both;
+      // animation-timeline: view();
+      // animation-range: contain 0% contain 50%;
+      .clippath__3{
+      clip-path: inset(0 10% 0 10%);
+      @include variable.sp{
+        clip-path: inset(0 10% 20% 10% );
+      }
+      }
+      @include variable.sp{
+        top: 120%;
+        width: 100%;
+        left: 0%;
+
+      }
+    }
+  }
+  .page1__content-02__textbox{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: -120px;
+    left: 18%;
+    @include variable.sp{
+      left: 0;
+      width: 90%;
+      padding: 5%;
+    }
+    p{
+      font-size: 1rem;
+      color: variable.$fontcolor;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+    }
+    .page1__content-02__textbox01{
+      padding-bottom: 40px ;
+      @include variable.sp{
+        padding-bottom: 280px ;
+      }
+    }
+  }
+}

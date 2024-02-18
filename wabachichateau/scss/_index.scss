@@ -1,0 +1,214 @@
+@use "variable";
+
+@keyframes fadeslide{
+  0% {  opacity: 1; }
+	5% {  opacity: 1; }
+	20% {  opacity: 1; }
+	25% {  opacity: 0; }
+	26% {  opacity: 0; }
+	100% {  opacity: 0; }
+}
+
+@keyframes fadeslide2{
+  0% {  opacity: 1; }
+	5% {  opacity: 1; }
+	20% {  opacity: 1; }
+	25% {  opacity: 0; }
+	26% {  opacity: 0; }
+	100% {  opacity: 0; }
+}
+
+
+@keyframes scroll{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}
+
+@keyframes scrollline {
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:150px;
+    opacity: 1;
+  }
+  100%{
+    height:550px;
+    top:50px;
+    opacity: 1;
+  }
+}
+.start_animation_scroll{
+  animation-name: scrollline;
+  // アニメーションの時間を指定
+  animation-duration: 5s;
+  //アニメーション再生後のスタイルを指定
+  animation-fill-mode: both;
+}
+@keyframes scrollline2 {
+  0%{
+    width:0;
+
+    opacity: 0;
+  }
+  30%{
+    width: 150px;
+    opacity: 1;
+  }
+  100%{
+    width: 300px;
+
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideimg{
+  from{
+    clip-path: inset(0 95% 0 0 );
+  }
+  to{
+    clip-path: inset(0);
+  }
+}
+
+
+
+// カーソルの役割
+// html,body,a {
+  // cursor: none;
+// }
+#js-cursor{
+  pointer-events: none;
+  position: fixed;
+  top: -15px;
+  left: -15px;
+  width: 15px;
+  height: 15px;
+  background-color:rgba(141, 192, 2, 0.5);
+  border-radius: 50%;
+  transform: translate(0,0);
+  z-index: 10000;
+  opacity: 0;
+  @include variable.sp{
+    display: none;
+
+  }
+
+}
+
+// ストーカーの役割
+#js-mouse{
+  pointer-events: none;
+  position: fixed;
+  top: -75px;
+  left: -75px;
+  width: 150px;
+  height: 150px;
+  // background-color:rgba(252, 252, 252, 0.5);
+  border-radius: 50%;
+  // border: solid 0.5px rgba(0, 0, 0, 0.5);
+  // transform: translate(0,0);
+  // transition: all 0.3s ease-out;
+  z-index: 9999;
+  opacity: 1;
+  background-size: 100%;
+  @include variable.sp{
+    display: none;
+
+  }
+  img{
+    animation: loop 13s linear infinite;
+  }
+
+}
+#js-cursor.js-hover {
+  width: 15px;
+  height: 15px;
+}
+#js-mouse.js-hover {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes loop{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+// -----------------------------
+//                         loading
+
+#splash {
+  /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background:#fff;
+    text-align:center;
+    color:#333;
+    p{
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Loading画像中央配置　*/
+  #splash_logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include variable.sp{
+      top: 30%;
+    }
+
+  }
+
+  /* Loading アイコンの大きさ設定　*/
+  #splash_logo img {
+    width:500px;
+    @include variable.sp{
+      width: 230px;
+    }
+  }
+
+  /* fadeUpをするアイコンの動き */
+  .fadeUp{
+  animation-name: fadeUpAnime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }

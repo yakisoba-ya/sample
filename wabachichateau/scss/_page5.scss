@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@use "index";
+@use "variable";
+
+
+.page5__header{
+
+  .page5__header__box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    @include variable.sp {
+
+      height: 80vh;
+    }
+
+    .page5__header__box__img{
+      position: absolute;
+      background-image: url(/images/p5mainvisual.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+    }
+    .page5__header__box__text-01{
+      position: absolute;
+      top: 28%;
+      left: 50%;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      @include variable.sp{
+        font-size: 3rem;
+        left: 50%;
+      }
+    }
+    .page5__header__box__text-02{
+      position: absolute;
+      top: 28%;
+      left: 43%;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      text-indent: 2em;
+      letter-spacing: 0.3em;
+      @include variable.sp{
+        font-size: 3rem;
+        left: 35%;
+      }
+    }
+    .page5__header__box__logo{
+      position: absolute;
+      left: 2%;
+      top: 2%;
+      z-index: 2;
+      width: 100px;
+      @include variable.sp{
+        width: 75px;
+      }
+    }
+  }
+}
+
+.page5__content-01{
+  position: relative;
+  height: 1500px;
+  margin-bottom: 250px;
+  .page5__content-01__title-01{
+    color: variable.$maincolor;
+    font-size: 2.3rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 120px;
+    top: 100px;
+    letter-spacing: 0.3em;
+  }
+
+
+  .page5__content-01__line{
+    position: absolute;
+    color: variable.$subcolor;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+
+
+    .page5__content-01__line01{
+        display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 10%;
+        height: 550px;
+        background: variable.$subcolor;
+        width: 1px;
+        // animation: scrollline 5s ease-in
+    }
+
+    .page5__content-01__line02{
+      display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 340px;
+        left: 1%;
+        height: 1px;
+        background: variable.$subcolor;
+        width: 300px;
+        // animation: scrollline2 5s ease-in
+
+    }
+   }
+   .page5__content-01-bg{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    opacity: 0.1;
+   }
+
+    .page5__content-01__box1{
+      padding: 0 10%;
+      position: absolute;
+      top: 25%;
+      @include variable.sp{
+
+      }
+      .page5__content-01__boxline01{
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 5%;
+        width: 90%;
+        height: 1px;
+        background: #101003;
+      }
+      .page5__content-01__box1-title{
+        color: variable.$fontcolor;
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        padding-top: 50px ;
+        @include variable.sp{
+          font-size: 1.2rem;
+
+        }
+
+      }
+      .page5__content-01__box1-text{
+        color: variable.$fontcolor;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        padding: 50px 0;
+        @include variable.sp{
+          font-size: 1rem;
+
+        }
+      }
+      .page5__content-01__boxline02{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        width: 90%;
+        height: 1px;
+        background: #101003;
+      }
+    }
+    .page5__content-01__box2{
+      padding: 0 10%;
+      position: absolute;
+      top: 46%;
+      @include variable.sp{
+        top: 45%;
+
+      }
+
+      .page5__content-01__box2-title{
+        color: variable.$fontcolor;
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        padding-top: 50px ;
+        @include variable.sp{
+          font-size: 1.2rem;
+
+        }
+
+      }
+      .page5__content-01__box2-text{
+        color: variable.$fontcolor;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        padding: 50px 0;
+        @include variable.sp{
+          font-size: 1rem;
+
+        }
+      }
+      .page5__content-01__line03{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        width: 90%;
+        height: 1px;
+        background: #101003;
+      }
+    }
+    .page5__content-01__box3{
+      padding: 0 10%;
+      position: absolute;
+      top: 72%;
+
+      .page5__content-01__box3-title{
+        color: variable.$fontcolor;
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        padding-top: 50px ;
+        @include variable.sp{
+          font-size: 1.2rem;
+
+        }
+      }
+      .page5__content-01__box3-text{
+        color: variable.$fontcolor;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        padding: 50px 0;
+        @include variable.sp{
+          font-size: 1rem;
+
+        }
+      }
+      .page5__content-01__line04{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        width: 90%;
+        height: 1px;
+        background: #101003;
+      }
+    }
+    .page5__content-01__box4{
+      padding: 0 10%;
+      position: absolute;
+      top: 90%;
+
+      .page5__content-01__box4-title{
+        color: variable.$fontcolor;
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        padding-top: 50px ;
+        @include variable.sp{
+          font-size: 1.2rem;
+          display: none;
+        }
+      }
+      .text-sp{
+        display: none;
+        @include variable.sp{
+          display: block;
+          font-size: 1.2rem;
+          color: variable.$fontcolor;
+          font-weight: 600;
+          letter-spacing: 0.3em;
+          padding-top: 100px ;
+        }
+      }
+      .page5__content-01__box4-text{
+        color: variable.$fontcolor;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        padding: 50px 0;
+        @include variable.sp{
+          font-size: 1rem;
+
+        }
+      }
+      .page5__content-01__line05{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        width: 90%;
+        height: 1px;
+        background: #101003;
+      }
+    }
+
+   .page5__content-01-bg2{
+    position: absolute;
+    left:-25%;
+    top: 100%;
+    width: 40%;
+    z-index: -10;
+
+   }
+ }

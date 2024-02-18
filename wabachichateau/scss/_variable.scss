@@ -1,0 +1,38 @@
+$pc: 1080px;
+$tab: 800px;
+$sp: 480px;
+
+@mixin pc{
+  @media screen and (max-width:($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width:($tab)){
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin btn{
+  width: 250px;
+  height: 46px;
+  background-color: #aa9900;
+  color: #fff;
+
+
+}
+
+$font: 'Shippori Mincho', serif;
+
+$maincolor:#aa9900;
+$subcolor: #c18259;
+$fontcolor: #121c35;
+$lightglay: #f5f5f5;
+$beju:#f1e6d6;

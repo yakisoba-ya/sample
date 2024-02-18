@@ -1,0 +1,1202 @@
+@charset "UTF-8";
+@use "index";
+@use "variable";
+
+
+.page4__header{
+
+  .page4__header__box{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    @include variable.sp {
+
+      height: 80vh;
+    }
+
+    .page4__header__box__img{
+      position: absolute;
+      background-image: url(/images/p4mainvisual.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+    }
+    .page4__header__box__text-01{
+      position: absolute;
+      top: 28%;
+      left: 50%;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      @include variable.sp{
+        font-size: 3rem;
+        left: 50%;
+      }
+    }
+    .page4__header__box__text-02{
+      position: absolute;
+      top: 28%;
+      left: 43%;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+      font-weight: 400;
+      text-indent: 3em;
+      letter-spacing: 0.3em;
+      @include variable.sp{
+        font-size: 3rem;
+        left: 35%;
+      }
+    }
+    .page4__header__box__logo{
+      position: absolute;
+      left: 2%;
+      top: 2%;
+      z-index: 2;
+      width: 100px;
+      @include variable.sp{
+        width: 75px;
+      }
+    }
+  }
+}
+
+// --------------------------------------------
+
+.page4__navi{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  @include variable.sp{
+    height: 100px;
+    justify-content: space-between;
+  }
+
+
+  .page4__navi__box{
+    position: absolute;
+    z-index: 10;
+    padding: 20px;
+    display: flex;
+    top: 30%;
+    left: 32%;
+    @include variable.sp{
+      left: 0%;
+      top: 25%;
+      padding: 10px;
+    }
+
+    .page4__navi__box__text-01{
+      font-size: 0.9rem;
+      @include variable.sp{
+        font-size: 0.7rem;
+      }
+    }
+    .page4__navi__box__tri-01{
+      position: absolute;
+      top:25px;
+      left: 130px;
+      width: 0;
+      height: 0;
+      border-top: solid 15px variable.$fontcolor;
+      border-right: solid 15px transparent;
+      border-bottom: solid 15px transparent;
+      border-left: solid 15px transparent;
+      @include variable.sp{
+        left: 50px;
+        top: 40px;
+      }
+    }
+  }
+  .page4__navi__box-02{
+    position: absolute;
+    z-index: 10;
+    padding: 20px;
+    display: flex;
+    top: 30%;
+    left: 45%;
+    @include variable.sp{
+      left: 30%;
+      top: 25%;
+      padding: 10px;
+    }
+
+    .page4__navi__box-02__text-02{
+      font-size: 0.9rem;
+      @include variable.sp{
+        font-size: 0.7rem;
+      }
+
+    }
+    .page4__navi__box-02__tri-02{
+      position: absolute;
+      top: 25px;
+      left: 150px;
+      width: 0;
+      height: 0;
+      border-top: solid 15px variable.$fontcolor;
+      border-right: solid 15px transparent;
+      border-bottom: solid 15px transparent;
+      border-left: solid 15px transparent;
+      @include variable.sp{
+        left: 50px;
+        top: 40px;
+      }
+    }
+  }
+
+  .page4__navi__box-03{
+    position: absolute;
+    z-index: 10;
+    padding: 20px;
+    display: flex;
+    top: 30%;
+    left: 60%;
+    @include variable.sp{
+      left: 63%;
+      top: 25%;
+      padding: 10px;
+    }
+
+    .page4__navi__box-03__text-03{
+      font-size: 0.9rem;
+      @include variable.sp{
+        font-size: 0.7rem;
+      }
+
+    }
+    .page4__navi__box-03__tri-03{
+      position: absolute;
+      top: 25px;
+      left: 150px;
+      width: 0;
+      height: 0;
+      border-top: solid 15px variable.$fontcolor;
+      border-right: solid 15px transparent;
+      border-bottom: solid 15px transparent;
+      border-left: solid 15px transparent;
+      @include variable.sp{
+        left: 50px;
+        top: 40px;
+      }
+    }
+  }
+  .page4__navi__box__bg{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: variable.$beju;
+    @include variable.sp{
+      height: 100px;
+    }
+
+  }
+  .page4__navi__box__line{
+    position: absolute;
+    top: 150px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #101003;
+    @include variable.sp{
+      top: 100px;
+    }
+  }
+}
+// -------------------------------------------
+.page4__content-01{
+  position: relative;
+  height: 1000px;
+  margin-bottom: 350px;
+  .page4__content-01__title-01{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 120px;
+    letter-spacing: 0.3em;
+    @include variable.sp{
+      left: 80px;
+    }
+  }
+  .page4__content-01__title-02{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 80px;
+    letter-spacing: 0.3em;
+    text-indent: 4em;
+    @include variable.sp{
+      left: 40px;
+    }
+  }
+
+  .page4__content-01__line{
+    position: absolute;
+    color: variable.$subcolor;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+
+
+    .page4__content-01__line01{
+        display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 10%;
+        height: 550px;
+        background: variable.$subcolor;
+        width: 1px;
+        // animation: scrollline 5s ease-in
+    }
+
+    .page4__content-01__line02{
+      display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 340px;
+        left: 1%;
+        height: 1px;
+        background: variable.$subcolor;
+        width: 300px;
+        // animation: scrollline2 5s ease-in
+
+    }
+    }
+ .page4__content-01__container1{
+  .page4__content-01__container1__text{
+    width: 37%;
+    position: absolute;
+    z-index: 10;
+    top: 15%;
+    left: 50%;
+    background-color: #fff;
+    @include variable.sp{
+      left: 10%;
+      top: 40%;
+      width: 80%;
+
+    }
+      .page4__content-01__container1__text01{
+        color: variable.$fontcolor;
+        font-size: 1.2rem;
+        font-weight: 600;
+        @include variable.sp{
+          font-size: 1rem;
+        }
+      }
+  }
+
+  .page4__content-01__container1__imgbox{
+
+
+    .page4__content-01__container1__imgbox01{
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      z-index: 9;
+      width: 50%;
+      // animation: slideimg linear both;
+        // animation-timeline: view();
+        // animation-range: contain 0% contain 50%;
+      @include variable.sp{
+        left: 35%;
+        top: 10%;
+        width: 60%;
+      }
+    }
+    .page4__content-01__container1__imgbox02{
+      position: absolute;
+      top: 22%;
+      left: 22%;
+      z-index: 8;
+      width: 38%;
+      height: 35%;
+      background-color: #f1e6d680;
+      @include variable.sp{
+        top: 12%;
+        left: 35%;
+        width: 65%;
+        height: 18%;
+
+      }
+    }
+  }
+ }
+ .page4__content-01__container2{
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 60%;
+  left: 8%;
+
+  .page4__content-01__container2__imgbox01{
+    width: 80%;
+    clip-path: inset(0 20% 0  20%);
+  }
+  .page4__content-01__container2__text{
+    width: 20%;
+    color: variable.$fontcolor;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+
+  }
+  }
+}
+// --------------------------------------------------
+.page4__section__line01{
+  width: 100%;
+    height: 100px;
+    background-color: #c18259;
+    margin-bottom: 20px;
+    @include variable.sp{
+      height: 50px;
+    }
+}
+
+.page4__content-02{
+  position: relative;
+  height: 1500px;
+  margin-bottom: 1300px;
+  @include variable.sp{
+    margin-bottom: 1000px;
+  }
+  .page4__content-02__title-01{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 120px;
+    letter-spacing: 0.3em;
+    @include variable.sp{
+      left: 80px;
+    }
+  }
+  .page4__content-02__title-02{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 80px;
+    letter-spacing: 0.3em;
+    text-indent: 4em;
+    @include variable.sp{
+      left: 40px;
+    }
+
+  }
+
+  .page4__content-02__line{
+    position: absolute;
+    color: variable.$subcolor;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+
+
+    .page4__content-02__line01{
+        display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 10%;
+        height: 550px;
+        background: variable.$subcolor;
+        width: 1px;
+        // animation: scrollline 5s ease-in
+    }
+
+    .page4__content-02__line02{
+      display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 340px;
+        left: 1%;
+        height: 1px;
+        background: variable.$subcolor;
+        width: 300px;
+        // animation: scrollline2 5s ease-in
+        @include variable.sp{
+          width: 250px;
+        }
+    }
+   }
+
+   .page4__content-02__container1{
+    .page4__content-02__container1__text{
+      .page4__content-02__container1__text01{
+        color: variable.$fontcolor;
+        font-size: 1.5rem;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-weight: 600;
+        width: 50px;
+        height: 400px;
+        position: absolute;
+        top: 3%;
+        left: 33%;
+        letter-spacing: 0.3em;
+        @include variable.sp{
+          letter-spacing: 0.1rem;
+          font-size: 1.2rem;
+          left: 85%;
+        }
+      }
+      .page4__content-02__container1__text02{
+        color: variable.$fontcolor;
+        font-size: 1.5rem;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-weight: 600;
+        width: 50px;
+        height: 400px;
+        position: absolute;
+        top: 10%;
+        left: 29%;
+        letter-spacing: 0.3em;
+        @include variable.sp{
+          letter-spacing: 0.1rem;
+          font-size: 1.2rem;
+          left: 75%;
+        }
+      }
+      .page4__content-02__container1__text03{
+        color: variable.$fontcolor;
+        font-size: 1.5rem;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-weight: 600;
+        width: 50px;
+        height: 400px;
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        letter-spacing: 0.3em;
+        @include variable.sp{
+          letter-spacing: 0.1rem;
+          font-size: 1.2rem;
+          left: 65%;
+        }
+      }
+    }
+    .page4__content-02__container1__imgbox{
+      .page4__content-02__container1__imgbox01{
+        width: 40%;
+        position: absolute;
+        right: 2%;
+        top: 18%;
+        z-index: 10;
+        @include variable.sp{
+          width: 60%;
+          left: 10%;
+          top: 30%;
+        }
+        .page4__content-02__container1__text01{
+          width: 65%;
+          color: variable.$fontcolor;
+          font-size: 1rem;
+          font-weight: 600;
+          padding-left: 100px;
+          @include variable.sp{
+            width: 100%;
+            padding: 0;
+          }
+        }
+      }
+      .page4__content-02__container1__imgbox02{
+        width: 15%;
+        height: 15%;
+        position: absolute;
+        top: 38%;
+        right: 36%;
+        background-color: #c6b484;
+        z-index: 9;
+        @include variable.sp{
+          width: 30%;
+          height: 7%;
+          top: 25%;
+          left: 5%;
+        }
+      }
+      .page4__content-02__container1__imgbox03{
+        width: 40%;
+        position: absolute;
+        right: 48%;
+        top: 50%;
+        z-index: 10;
+        @include variable.sp{
+          width: 90%;
+          left: 5%;
+          top: 45%;
+        }
+        .page4__content-02__container1__text02{
+          width: 70%;
+          color: variable.$fontcolor;
+          font-size: 1rem;
+          font-weight: 600;
+          @include variable.sp{
+            width: 100%;
+          }
+
+        }
+      }
+    }
+    .page4__content-02__container1__box{
+      .page4__content-02__container1__boximg{
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        @include variable.sp{
+          width: 70%;
+          top: 65%;
+          left: 10%;
+        }
+      }
+
+
+    }
+    .page4__content-02-line01{
+      content: "";
+      position: absolute;
+      top: 87%;
+      left: 5%;
+      width: 90%;
+      height: 1px;
+      background: #101003;
+      @include variable.sp{
+       top: 85%;
+      }
+    }
+    .page4__content-02-line02{
+      content: "";
+      position: absolute;
+      top: 88%;
+      left: 5%;
+      width: 90%;
+      height: 1px;
+      background: #101003;
+      @include variable.sp{
+       top: 86%;
+      }
+    }
+  }
+
+  .page4__content-02__container2{
+    .page4__content-02__container2__text{
+    .page4__content-02__container2__text01{
+      color: variable.$fontcolor;
+        font-size: 1.5rem;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-weight: 600;
+        width: 50px;
+        height: 470px;
+        position: absolute;
+        top: 90%;
+        right: 5%;
+        letter-spacing: 0.3em;
+        @include variable.sp{
+          font-size: 1.2rem;
+          height: 250px;
+          text-align: end;
+        }
+    }
+  }
+  .page4__content-02__container2__box{
+    position: absolute;
+    top: 100%;
+    left: 12%;
+    width: 40%;
+    @include variable.sp{
+      top: 90%;
+      left: 5%;
+      width: 60%;
+    }
+    .page4__content-02__container2__text01{
+      color: variable.$fontcolor;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 70%;
+        @include variable.sp{
+          width: 100%;
+        }
+    }
+
+  }
+  .page4__content-02__container2__box2{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    width: 40%;
+    @include variable.sp{
+      top: 110%;
+      width: 70%;
+      left: 20%;
+    }
+    .page4__content-02__container2__text02{
+      color: variable.$fontcolor;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 80%;
+        display: flex;
+        padding-left: 70px;
+        @include variable.sp{
+          width: 100%;
+          padding: 0;
+        }
+    }
+
+  }
+  .page4__content-02__container2__box3{
+    position: absolute;
+    top: 140%;
+    left: 12%;
+    width: 40%;
+    @include variable.sp{
+      top:130% ;
+      width: 70%;
+      left: 10%;
+    }
+    .page4__content-02__container2__text03{
+      color: variable.$fontcolor;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 70%;
+        @include variable.sp{
+          width: 100%;
+        }
+    }
+
+  }
+  .page4__content-02-line03{
+    content: "";
+    position: absolute;
+    top: 172%;
+    left: 5%;
+    width: 90%;
+    height: 1px;
+    background: #101003;
+    @include variable.sp{
+      top: 150%;
+    }
+  }
+  .page4__content-02-line04{
+    content: "";
+    position: absolute;
+    top: 173%;
+    left: 5%;
+    width: 90%;
+    height: 1px;
+    background: #101003;
+    @include variable.sp{
+      top: 151%;
+    }
+  }
+
+  .page4__content-02__container2__text1{
+    width: 65%;
+    position: absolute;
+    top: 175%;
+    left: 15%;
+    color: variable.$maincolor;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    @include variable.sp{
+      top: 155%;
+      left: 7%;
+      width: 85%;
+      font-size: 1.3rem;
+    }
+  }
+  }
+
+}
+// -----------------------------------------
+.page4__section__line02{
+  width: 100%;
+  height: 100px;
+  background-color: #c18259;
+  margin-bottom: 20px;
+  @include variable.sp{
+    height: 50px;
+  }
+}
+
+.page4__content-03{
+  position: relative;
+  height: 1500px;
+  margin-bottom: 1300px;
+  .page4__content-03__title-01{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 120px;
+    letter-spacing: 0.3em;
+    @include variable.sp{
+      left: 80px;
+    }
+  }
+  .page4__content-03__title-02{
+    color: variable.$maincolor;
+    font-size: 2rem;
+    font-family: variable.$font;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    width: 50px;
+    height: 350px;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: 80px;
+    letter-spacing: 0.3em;
+    text-indent: 4em;
+    @include variable.sp{
+      left: 40px;
+    }
+  }
+
+  .page4__content-03__line{
+    position: absolute;
+    color: variable.$subcolor;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+
+
+    .page4__content-03__line01{
+        display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 10%;
+        height: 550px;
+        background: variable.$subcolor;
+        width: 1px;
+        // animation: scrollline 5s ease-in
+    }
+
+    .page4__content-03__line02{
+      display: inline-block;
+        position: absolute;
+        z-index: 20;
+        top: 340px;
+        left: 1%;
+        height: 1px;
+        background: variable.$subcolor;
+        width: 300px;
+        // animation: scrollline2 5s ease-in
+    }
+   }
+
+.page4__content-03__container1{
+  .page4__content-03__container1__box1{
+    position: absolute;
+    top: 400px;
+    left: 10%;
+    width: 40%;
+    position: relative;
+    z-index: 0;
+    @include variable.sp{
+      width: 45%;
+      top: 400px;
+      left: 5%;
+    }
+
+    p{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      color: variable.$fontcolor;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 85%;
+        display: flex;
+        background-color: #fff;
+        @include variable.sp{
+          width: 100%;
+          font-size: 0.6rem;
+          padding: 0;
+          top: 120%;
+        }
+    }
+    p:nth-of-type(1){
+      font-size: 1.4rem;
+      padding-bottom:20px ;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      @include variable.sp{
+        font-size: 0.9rem;
+        position: absolute;
+        top: 100%;
+      }
+
+    }
+    .page4__content-03__container1__box1bg{
+      width: 100px;
+      height: 100px;
+      background-color:#c6b484 ;
+      position: absolute;
+      z-index: -1;
+      top: -50px;
+      left: -50px;
+      @include variable.sp{
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: -25px;
+      }
+    }
+  }
+  .page4__content-03__container1__box2{
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    width: 40%;
+    position: relative;
+    z-index: 0;
+    @include variable.sp{
+      width: 45%;
+      top: 300px;
+      left: 55%;
+    }
+
+    p{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      color: variable.$fontcolor;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 85%;
+        display: flex;
+        background-color: #fff;
+        @include variable.sp{
+          width: 100%;
+          font-size: 0.6rem;
+          padding: 0;
+          top: 120%;
+        }
+    }
+    p:nth-of-type(1){
+      font-size: 1.4rem;
+      padding-bottom:20px ;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      @include variable.sp{
+        font-size: 0.9rem;
+        position: absolute;
+        top: 100%;
+      }
+    }
+    .page4__content-03__container1__box2bg{
+      width: 100px;
+      height: 100px;
+      background-color:#c6b484 ;
+      position: absolute;
+      z-index: -1;
+      top: -50px;
+      left: -50px;
+      @include variable.sp{
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: -25px;
+      }
+    }
+  }
+  .page4__content-03__container1__box3{
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    width: 40%;
+    position: relative;
+    z-index: 0;
+    @include variable.sp{
+      width: 45%;
+      top: 450px;
+      left: 5%;
+    }
+
+    p{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      color: variable.$fontcolor;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 85%;
+        display: flex;
+        background-color: #fff;
+        @include variable.sp{
+          width: 100%;
+          font-size: 0.6rem;
+          padding: 0;
+          top: 120%;
+        }
+    }
+    p:nth-of-type(1){
+      font-size: 1.4rem;
+      padding-bottom:20px ;
+      position: absolute;
+      top:60% ;
+      left: 0;
+      @include variable.sp{
+        font-size: 0.9rem;
+        position: absolute;
+        top: 100%;
+      }
+    }
+    .page4__content-03__container1__box3bg{
+      width: 100px;
+      height: 100px;
+      background-color:#c6b484 ;
+      position: absolute;
+      z-index: -1;
+      top: -50px;
+      left: -50px;
+      @include variable.sp{
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: -25px;
+      }
+    }
+  }
+  .page4__content-03__container1__box4{
+    position: absolute;
+    top: -170px;
+    left: 60%;
+    width: 40%;
+    position: relative;
+    z-index: 0;
+    @include variable.sp{
+      width: 45%;
+      top: 350px;
+      left: 55%;
+    }
+
+    p{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      color: variable.$fontcolor;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 85%;
+        display: flex;
+        background-color: #fff;
+        @include variable.sp{
+          width: 100%;
+          font-size: 0.6rem;
+          padding: 0;
+          top: 120%;
+        }
+    }
+    p:nth-of-type(1){
+      font-size: 1.4rem;
+      padding-bottom:20px ;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      @include variable.sp{
+        font-size: 0.9rem;
+        position: absolute;
+        top: 100%;
+      }
+    }
+    .page4__content-03__container1__box4bg{
+      width: 100px;
+      height: 100px;
+      background-color:#c6b484 ;
+      position: absolute;
+      z-index: -1;
+      top: -50px;
+      left: -50px;
+      @include variable.sp{
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: -25px;
+      }
+    }
+  }
+  .page4__content-03__container1__box5{
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    width: 40%;
+    position: relative;
+    z-index: 0;
+    @include variable.sp{
+      width: 45%;
+      top: 500px;
+      left: 5%;
+    }
+
+    p{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      color: variable.$fontcolor;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 85%;
+        display: flex;
+        background-color: #fff;
+        @include variable.sp{
+          width: 100%;
+          font-size: 0.6rem;
+          padding: 0;
+          top: 120%;
+        }
+    }
+    p:nth-of-type(1){
+      font-size: 1.4rem;
+      padding-bottom:20px ;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      @include variable.sp{
+        font-size: 0.9rem;
+        position: absolute;
+        top: 100%;
+      }
+    }
+    .page4__content-03__container1__box5bg{
+      width: 100px;
+      height: 100px;
+      background-color:#c6b484 ;
+      position: absolute;
+      z-index: -1;
+      top: -50px;
+      left: -50px;
+      @include variable.sp{
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: -25px;
+      }
+    }
+  }
+  .page4__content-03__container1__box6{
+    position: absolute;
+    top: -370px;
+    left: 60%;
+    width: 40%;
+    position: relative;
+    z-index: 0;
+    @include variable.sp{
+      width: 45%;
+      top: 400px;
+      left: 55%;
+    }
+
+    p{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      color: variable.$fontcolor;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 85%;
+        display: flex;
+        background-color: #fff;
+        @include variable.sp{
+          width: 100%;
+          font-size: 0.6rem;
+          padding: 0;
+          top: 120%;
+        }
+    }
+    p:nth-of-type(1){
+      font-size: 1.4rem;
+      padding-bottom:20px ;
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      @include variable.sp{
+        font-size: 0.9rem;
+        position: absolute;
+        top: 100%;
+      }
+    }
+    .page4__content-03__container1__box6bg{
+      width: 100px;
+      height: 100px;
+      background-color:#c6b484 ;
+      position: absolute;
+      z-index: -1;
+      top: -50px;
+      left: -50px;
+      @include variable.sp{
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: -25px;
+      }
+    }
+  }
+}
+}
